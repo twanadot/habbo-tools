@@ -1,0 +1,240 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css";
+
+:root {
+  --main-bg-color: #181818;
+  --ht-brand-color: #c93c00;
+  --krews-brand-color: #c27647;
+  --ht-gray-dark: #121212;
+  --ht-gray: #1b1b1b;
+}
+
+html { margin-bottom: 130px }
+
+.body-bg-gray {
+  background-color: var(--main-bg-color);
+  color: #FFF;
+  font-family: Monaco,Menlo,Courier,Courier New,Andale Mono;
+}
+
+.body-border {
+  border-top: 4px solid;
+  border-color: var(--ht-brand-color);
+}
+
+.text-orange-krews {
+  color: var(--krews-brand-color);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  color: var(--ht-brand-color) !important;
+}
+
+.navbar-brand-subtext {
+  position: absolute;
+  font-size: 0.75rem;
+  color: #FFF;
+  margin-top: -10px;
+  margin-left: 55px;
+  display:block;
+}
+
+.navbar-brand-subtext a {
+  color: #FFF;
+}
+
+.navbar-brand-subtext a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--ht-gray-dark);
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: var(--ht-gray);
+}
+
+.card .card {
+  background-color: rgba(0,0,0,.2);
+}
+
+.modal-content {
+  background-color: var(--ht-gray);
+}
+
+.modal-header {
+  background-color: var(--ht-gray-dark);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.modal-footer {
+  background-color: var(--ht-gray-dark);
+  border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.summary-modal .modal-dialog {
+  width: 100%;
+}
+
+.custom-file {
+  font-size: .875rem;
+}
+
+.custom-file-label {
+  padding: .25rem .75rem;
+  height: auto;
+  background-color: #545b62;
+  border-color: #4e555b;
+  color: #FFF;
+}
+
+.custom-file-label::after {
+  padding: .25rem .75rem;
+  height: auto;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #FFF;
+}
+
+.narrow-form-group,
+.input-group.file-chooser {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.input-group-dark input,
+.form-url-input {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #545b62;
+  border-color: #545b62;
+  color: #FFF;
+}
+
+.input-group-dark input::placeholder,
+.form-url-input::placeholder {
+  color: #DDD;
+}
+
+.input-group-dark .input-group-text {
+  background-color: #6c757d;
+  color: #FFF;
+  border: #6c757d;
+}
+
+.input-group-dark input:focus,
+.form-url-input:focus {
+  background-color: #545b62;
+  color: #FFF;
+}
+
+.form-group.required .control-label:after { 
+  content: "*";
+  color: #9c0000;
+  position: absolute;
+}
+
+.card-header {
+  background-color: var(--ht-gray-dark)
+}
+
+.card-footer {
+  background-color: var(--ht-gray-dark)
+}
+
+.loading-display {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 30;
+    line-height: 80vh;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+}
+
+.jumbotron {
+  background: rgba(0,0,0,.35);
+}
+
+.jumbotron .small-text {
+  font-size: 0.9rem;
+}
+
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  display: block;
+}
+
+.jumbotron-less-padding {
+  padding: 1rem 1rem;
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: var(--krews-brand-color);
+}
+
+.summary-modal .close {
+  color: #FFF;
+}
+
+.summary-modal .modal-dialog {
+  margin: 8rem auto;
+}
+
+.summary-modal .modal-footer {
+  justify-content: center;
+}
+
+.spoiler-btn {
+  cursor: pointer;
+}
+
+.fa.fa-blue {
+  color: #0098d2;
+}
+
+select.form-control {
+  color: #FFF;
+  background-color: #545b62;
+  border-color: #545b62;
+}
+
+select.form-control:focus {
+  background-color: #6c757d;
+  border-color: #545b62;
+  color: #FFF;
+}
+
+@media (min-width: 1200px) {
+  .summary-modal .modal-dialog {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 576px) { 
+  .jumbotron-less-padding {
+    padding: 2rem 2rem;
+  }
+}
